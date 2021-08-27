@@ -1,4 +1,6 @@
 # Maintainer: Solomon Choina <shlomochoina@gmail.com>
+#
+# Contributor:unmellow <unmellow2020@googlemail.com>
 pkgname=tau-editor-git
 pkgver=v0.12.0.r0.e3a4f03
 pkgrel=1
@@ -22,7 +24,7 @@ pkgver() {
 }
 
 build() {
-	arch-meson --prefix=/usr  -Dxi-core=system -Dlibhandy=enabled tau build
+	arch-meson --prefix=/usr tau build
   ninja -C build
 }
 
